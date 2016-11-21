@@ -1,0 +1,50 @@
+<div class="container">
+
+	<div class="login" ng-show="!access_token">	
+		<a href="{{url}}" class="btn btn-block btn-social btn-instagram">
+			<i class="fa fa-instagram"></i>Sign in
+		</a>
+	</div>
+	
+	<div ng-show="access_token">
+		<div class=" col-md-4">
+			<h1>You are following</h1>
+			<div class="user-list">
+				<div class="user" ng-repeat="user in following">
+					<img class="profile-picture" ng-src="{{user.profile_picture}}"/>
+					<div class="user-data">
+						<p class="username">{{user.username}}</p>			
+						<p class="full-name">{{user.full_name}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<h1>You are followed by</h1>
+			<div class="user-list">
+				<div class="user" ng-repeat="user in followed">
+					<img class="profile-picture" ng-src="{{user.profile_picture}}"/>
+					<div class="user-data">
+						<p class="username">{{user.username}}</p>			
+						<p class="full-name">{{user.full_name}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4">
+			<h1>Bad people</h1>
+			<div class="user-list">
+				<div class="user" ng-repeat="user in fuckers">
+					<img class="profile-picture" ng-src="{{user.profile_picture}}"/>
+					<div class="user-data">
+						<p class="username">{{user.username}}</p>			
+						<p class="full-name">{{user.full_name}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,15 @@
+{
+  "name": "follow-me-back",
+  "description": "Look who is not following you back.",
+  "repository": "https://github.com/carlosrive94/follow-me-back",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "angular-loader": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "html5-boilerplate": "^5.3.0",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}
